@@ -1,1 +1,9 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body{
+    background-image: url(src/assets/git3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
