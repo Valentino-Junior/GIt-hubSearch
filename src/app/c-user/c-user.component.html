@@ -1,7 +1,8 @@
-<div *ngIf='user' class="floating-form text-center">
+<div  class="floating-form text-center">
     <br><input type="text" style="margin-right: 6px;" name="seach" id="search" placeholder="Search user">
     <button (click)="searchUser()" class="btn btn-dark" type="submit">Search</button>
 
+<div *ngIf='user' class="outcome">
 
     <h2><b>
             {{user.login|uppercase}}
@@ -14,11 +15,12 @@
 
     </p>
     <P>
-        Followers: {{user.followers}}
+        Followers: <b>{{user.followers}}</b>
     </P>
     <P>
-        Following: {{user.following}}
+        Following: <b>{{user.following}}</b>
     </P>
 
     <img class='img-fluid' src="{{user.avatar_url}}"><br><br>
-    <p><a href="{{user.html_url}}" target="_blank" class="btn btn-warning btn-sm">View Profile </a></p>
+    <p><a href="{{user.html_url}}" target="_blank" class="btn btn-outline-warning btn-sm">View Profile </a></p>
+    </div>

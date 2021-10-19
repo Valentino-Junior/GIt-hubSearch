@@ -1,6 +1,6 @@
 <div class="floating-form text-center">
     <br><input type="text" style="margin-right: 6px;" name="seach" id="search" placeholder="Search repository">
-    <button  (click)= searchRepo() class = "btn btn-dark" type="submit">Search</button>
+    <button (click)= searchRepo() class = "btn btn-dark" type="submit">Search</button>
     </div>
     <div class="container">
        <div class="row">
@@ -17,7 +17,7 @@
                      <p>
                       Created on: {{repo.created_at|date}}
                   </p>
-                     <p><a href="{{repo.html_url}}" target="_blank" class="btn btn-warning btn-sm"> View Repo</a></p>
+                     <p><a href="{{repo.html_url}}" target="_blank" class="btn btn-outline-warning btn-sm"> View Repo</a></p>
                </div> 
              </div>
             
