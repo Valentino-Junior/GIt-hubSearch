@@ -9,9 +9,10 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 
 
 const routes: Routes = [
-  {path:'', component:CHomeComponent},
+  {path:'home', component:CHomeComponent},
   {path:'user', component:CUserComponent},
   {path:'repo', component:CRepositoryComponent},
+  {path:'', redirectTo: '/home', pathMatch: 'full' },
   {path:'**', component:NotFoundPageComponent},
 
   
