@@ -1,33 +1,24 @@
-<div *ngIf = 'user' class="floating-form text-center">
-<br><input type="text" style="margin-right: 6px;" name="seach" id="search" placeholder="Search user">
-<button (click) = "searchUser()" class = "btn btn-dark" type="submit">Search</button>
+<div *ngIf='user' class="floating-form text-center">
+    <br><input type="text" style="margin-right: 6px;" name="seach" id="search" placeholder="Search user">
+    <button (click)="searchUser()" class="btn btn-dark" type="submit">Search</button>
 
 
-<h2><b>
-    {{user.login|uppercase}}
-    
-    
-</b></h2>
-
-<p>
-    {{user.bio}}
-    
-</p>
-<P>
-    Followers: {{user.followers}}
-</P>
-<P>
-    Following: {{user.following}}
-</P>
-
-<img class = 'img-fluid' src="{{user.avatar_url}}"><br><br>
-<p><a href="{{user.html_url}}" target="_blank" class="btn btn-warning btn-sm">View Profile </a></p>
+    <h2><b>
+            {{user.login|uppercase}}
 
 
+        </b></h2>
 
-
-<!-- <div  *ngFor let repo of repos>
     <p>
-        {{repos.login}}
-        </p>
-</div> -->
+        {{user.bio}}
+
+    </p>
+    <P>
+        Followers: {{user.followers}}
+    </P>
+    <P>
+        Following: {{user.following}}
+    </P>
+
+    <img class='img-fluid' src="{{user.avatar_url}}"><br><br>
+    <p><a href="{{user.html_url}}" target="_blank" class="btn btn-warning btn-sm">View Profile </a></p>
