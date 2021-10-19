@@ -1,11 +1,10 @@
 export class User {
-    public avatar_url: any;
-    public name!: string
-    public created!: string;
-    public followers_url!: number;
-    public following_url!: number;
-    public public_repos!: string;
-    public repos_url!: string;
-    
+    public login!: string;
+    public bio!: string
+    public followers!: number;
+    public following!: number;
+    public avatar_url!: number;
+    public html_url!: number;
+   
 }
 
