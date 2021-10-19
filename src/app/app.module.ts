@@ -10,6 +10,7 @@ import { CUserComponent } from './c-user/c-user.component';
 import { CRepositoryComponent } from './c-repository/c-repository.component';
 import { CHomeComponent } from './c-home/c-home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     SearchComponent,
     CUserComponent,
     CRepositoryComponent,
-    CHomeComponent
+    CHomeComponent,
+    HighlightDirective
 
   ],
   imports: [
