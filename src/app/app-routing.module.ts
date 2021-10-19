@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'user', component:CUserComponent},
   {path:'repo', component:CRepositoryComponent},
   {path:'', redirectTo: '/home', pathMatch: 'full' },
-  {path:'**', component:NotFoundPageComponent},
+  // {path:'**', component:NotFoundPageComponent},
 
   
   
