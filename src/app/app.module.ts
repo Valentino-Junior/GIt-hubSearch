@@ -11,6 +11,7 @@ import { CRepositoryComponent } from './c-repository/c-repository.component';
 import { CHomeComponent } from './c-home/c-home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HighlightDirective } from './highlight.directive';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -29,7 +30,8 @@ import { HighlightDirective } from './highlight.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule ,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

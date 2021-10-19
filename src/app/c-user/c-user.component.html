@@ -1,5 +1,5 @@
 <div  class="floating-form text-center">
-    <br><input type="text" style="margin-right: 6px;" name="seach" id="search" placeholder="Search user">
+    <br><input [(ngModel)] = 'username' type="text" style="margin-right: 6px;" name="seach" id="search" placeholder="Search user">
     <button (click)="searchUser()" class="btn btn-dark" type="submit">Search</button>
 
 <div *ngIf='user' class="outcome">

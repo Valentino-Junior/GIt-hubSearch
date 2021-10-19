@@ -19,7 +19,7 @@ export class SearchService {
 
   constructor(private http: HttpClient) {
     console.log("Github service started");
-    this.username = "valentine-ochieng";
+    this.username = "";
   }
   getUser() {
     return this.http.get(
