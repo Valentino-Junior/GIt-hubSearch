@@ -10,17 +10,17 @@
 
         </b></h2>
 
-    <p>
+    <h4>
         {{user.bio}}
 
-    </p>
-    <P>
-        Followers: <b>{{user.followers}}</b>
-    </P>
-    <P>
+    </h4>
+    <h5>
+    Followers: <b>{{user.followers}}</b>
+    </h5>
+    <h5>
         Following: <b>{{user.following}}</b>
-    </P>
+    </h5>
 
-    <img class='img-fluid w-25' src="{{user.avatar_url}}"><br><br>
+    <img class='img-fluid' src="{{user.avatar_url}}" style="width: 200px;"><br><br>
     <p><a href="{{user.html_url}}" target="_blank" class="btn btn-outline-warning btn-sm">View Profile </a></p>
     </div>
