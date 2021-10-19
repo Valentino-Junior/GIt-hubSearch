@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CHomeComponent } from './c-home/c-home.component';
 import { CRepositoryComponent } from './c-repository/c-repository.component';
 import { CUserComponent } from './c-user/c-user.component';
-import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+// import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 
 
