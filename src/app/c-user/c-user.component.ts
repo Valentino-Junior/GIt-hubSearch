@@ -19,7 +19,7 @@ export class CUserComponent implements OnInit {
   
 
   searchUser() {
-    this.sService.updateUsername(this.username);
+    this.sService.newUsername(this.username);
 
     this.sService.getUser().subscribe(user => {
       this.user = user;

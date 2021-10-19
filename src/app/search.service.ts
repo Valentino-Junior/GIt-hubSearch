@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 
 Users: User;
 Repo: Repository;
+
 @Injectable({
   providedIn: 'root'
 })
@@ -39,7 +40,7 @@ export class SearchService {
       this.client_secret
     );
   }
-  updateUsername(username: any) {
+  newUsername(username: any) {
     this.username = username;
   }
 }

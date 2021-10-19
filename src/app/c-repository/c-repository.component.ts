@@ -20,7 +20,7 @@ export class CRepositoryComponent implements OnInit {
   
 
   searchRepo() {
-    this.sService.updateUsername(this.username);
+    this.sService.newUsername(this.username);
     this.sService.getRepos().subscribe(repos => {
       this.reposit = repos;
       console.log(this.reposit);
