@@ -10,7 +10,7 @@ G-search App enables users to enter their github username on a form and upon sub
   3. To examine the code, use a text editor such as Visual Studio Code, atom, notepad, or any other.
   4. To get a sense of how the site looks and feels, open it in a web browser.
 # Live Link
-https://valentine-ochieng.github.io/Quote-App/
+https://valentine-ochieng.github.io/GIt-hubSearch/
 # Technologies Used
  I utilised Angular Js, HTML, CSS and Bootstrap to deisgn the G-search App
 # Support and Contact Details
