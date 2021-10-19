@@ -9,10 +9,10 @@ import { CUserComponent } from './c-user/c-user.component';
 
 
 const routes: Routes = [
-  {path:'home', component:CHomeComponent},
+  {path:'GIt-hubSearch', component:CHomeComponent},
   {path:'user', component:CUserComponent},
   {path:'repo', component:CRepositoryComponent},
-  {path:'', redirectTo: '/home', pathMatch: 'full' },
+  {path:'', redirectTo: '/GIt-hubSearch', pathMatch: 'full' },
   // {path:'**', component:NotFoundPageComponent},
 
   
