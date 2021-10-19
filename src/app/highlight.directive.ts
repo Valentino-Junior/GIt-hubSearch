@@ -7,7 +7,7 @@ export class HighlightDirective {
   constructor(private el: ElementRef) {}
 
   @HostListener('mouseenter') onMouseEnter() {
-    this.highlight('green-yellow');
+    this.highlight('cyan');
   }
 
   @HostListener('mouseleave') onMouseLeave() {
