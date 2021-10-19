@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchService } from '../search.service';
 
 @Component({
   selector: 'app-c-user',
@@ -6,8 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./c-user.component.css']
 })
 export class CUserComponent implements OnInit {
+  user: any;
+  username: any;
+  
+  constructor(private sService: SearchService) {
+    this.sService.getUser().subscribe(user => {
+      this.user = user;
+      console.log(this.user);
+    });
+  }
+  
 
-  constructor() { }
+  searchUser() {
+    this.sService.updateUsername(this.username);
+
+    this.sService.getUser().subscribe(user => {
+      this.user = user;
+      console.log(this.user);
+    });
+  }
 
   ngOnInit(): void {
   }
