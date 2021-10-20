@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchService } from '../search.service';
-// import { Spinkit } from 'ng-http-loader';
+
 
 @Component({
   selector: 'app-c-user',
@@ -8,7 +8,7 @@ import { SearchService } from '../search.service';
   styleUrls: ['./c-user.component.css']
 })
 export class CUserComponent implements OnInit {
-  // spinnerStyle = Spinkit;
+  
   user: any;
   username: any;
   
