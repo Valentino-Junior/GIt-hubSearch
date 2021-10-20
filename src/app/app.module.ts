@@ -12,6 +12,12 @@ import { CHomeComponent } from './c-home/c-home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HighlightDirective } from './highlight.directive';
 import { FormsModule } from '@angular/forms';
+import { DurationCountPipe } from './duration-count.pipe';
+import { NgHttpLoaderModule } from 'ng-http-loader';
+
+// import { NgProgressModule } from '@ngx-progressbar/core';
+// import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+
 
 
 
@@ -24,14 +30,22 @@ import { FormsModule } from '@angular/forms';
     CUserComponent,
     CRepositoryComponent,
     CHomeComponent,
-    HighlightDirective
+    HighlightDirective,
+    DurationCountPipe
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule ,
-    FormsModule
+    FormsModule,
+    NgHttpLoaderModule.forRoot() 
+    // NgProgressModule.forRoot(),
+    // NgProgressHttpClientModule
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

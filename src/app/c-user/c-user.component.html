@@ -1,26 +1,39 @@
-<div  class="floating-form text-center">
-    <br><input [(ngModel)] = 'username' type="text" style="margin-right: 6px;" name="seach" id="search" placeholder="Search user">
+<div class="floating-form text-center">
+    <!-- <ng-progress></ng-progress> -->
+    <ng-http-loader></ng-http-loader>
+    <br><input [(ngModel)]='username' type="text" style="margin-right: 6px;" name="seach" id="search"
+        placeholder="Search user">
     <button (click)="searchUser()" class="btn btn-dark" type="submit">Search</button>
+    
 
-<div *ngIf='user' class="outcome">
+    <div *ngIf='user' class="outcome">
 
-    <h2><b>
-            {{user.login|uppercase}}
+        <h2><b>
+                {{user.login|uppercase}}
 
 
-        </b></h2>
+            </b></h2>
 
-    <h4>
-        {{user.bio}}
+        <h4>
+            {{user.bio}}
 
-    </h4>
-    <h5>
-    Followers: <b>{{user.followers}}</b>
-    </h5>
-    <h5>
-        Following: <b>{{user.following}}</b>
-    </h5>
+        </h4>
+        <h5>
+            Followers: <b>{{user.followers}}</b>
+        </h5>
+        <h5>
+            Following: <b>{{user.following}}</b>
+        </h5>
 
-    <img class='img-fluid' src="{{user.avatar_url}}" style="width: 200px;"><br><br>
-    <p><a href="{{user.html_url}}" target="_blank" class="btn btn-outline-warning btn-sm">View Profile </a></p>
+        <img class='img-fluid' src="{{user.avatar_url}}" style="width: 200px;"><br><br>
+        <p><a href="{{user.html_url}}" target="_blank" class="btn btn-outline-warning btn-sm">View Profile </a></p>
     </div>
+    <!-- <ng-http-loader 
+    [backdrop]="false"
+    [backgroundColor]="'#FFOOOO'"
+    [debounceDelay]="100"
+    [extraDuration]="3000"
+    [minDuration]="300"
+    [spinner]="spinnerStyle.skWave"
+    >
+</ng-http-loader> -->
