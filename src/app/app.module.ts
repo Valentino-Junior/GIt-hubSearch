@@ -40,10 +40,10 @@ import { NgHttpLoaderModule } from 'ng-http-loader';
     AppRoutingModule,
     HttpClientModule ,
     FormsModule,
-    NgHttpLoaderModule.forRoot() 
+    NgHttpLoaderModule.forRoot() ,
     // NgProgressModule.forRoot(),
     // NgProgressHttpClientModule
-
+    
 
 
   ],
